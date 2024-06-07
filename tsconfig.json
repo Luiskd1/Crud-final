@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],  // Librerías estándar
+    "allowJs": true,                           // Permitir archivos .js
+    "skipLibCheck": true,                      // Omitir la verificación de tipos en los archivos de definición
+    "strict": true,                            // Habilitar todas las verificaciones estrictas
+    "noEmit": true,                            // No emitir archivos de salida
+    "esModuleInterop": true,                   // Habilitar la interoperabilidad con ES6
+    "module": "esnext",                        // Especificar el módulo de salida como ESNext
+    "moduleResolution": "bundler",             // Resolución de módulos para bundlers
+    "resolveJsonModule": true,                 // Permitir la importación de módulos JSON
+    "isolatedModules": true,                   // Asegurarse de que cada archivo se puede compilar en aislamiento
+    "jsx": "preserve",                         // Preservar JSX en la salida
+    "incremental": true,                       // Habilitar compilación incremental
+    "plugins": [
+      {
+        "name": "next"                         // Plugin de Next.js
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]                       // Mapeo de rutas para resolver '@'
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"], // Archivos incluidos
+  "exclude": ["node_modules"] // Excluir node_modules
+}
