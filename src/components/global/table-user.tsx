@@ -50,6 +50,7 @@ import { Input } from "../ui/input";
 import AddUser from "@/app/crud/components/adduser";
 import useApi from "./useApi";
 import useStorePage from "./store";
+import SendMessage from "./SendMessage";
 
 
 
@@ -204,6 +205,8 @@ const TableUser = () => {
                     </PaginationItem>
                 </PaginationContent>
             </Pagination>
+
+            <SendMessage/>
         </div>
     )
 }
